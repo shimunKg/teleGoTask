@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="391" id="KGk-i7-Jjw" customClass="DetailsTableViewCell" customModule="telegoTask_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="391"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHP-64-UL0">
+                        <rect key="frame" x="16" y="16" width="288" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="uoI-ES-02J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnailPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="r6e-XZ-BXw">
+                        <rect key="frame" x="16" y="54" width="288" height="288"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxd-Bs-1Ex">
+                        <rect key="frame" x="16" y="354" width="288" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Ly4-F5-Nk6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r6e-XZ-BXw" firstAttribute="width" secondItem="r6e-XZ-BXw" secondAttribute="height" multiplier="1:1" id="1Wu-Rp-cnK"/>
+                    <constraint firstItem="r6e-XZ-BXw" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4dT-yz-W8u"/>
+                    <constraint firstItem="iHP-64-UL0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.9" id="IUV-B1-gIk"/>
+                    <constraint firstItem="iHP-64-UL0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="T6i-9u-n1E"/>
+                    <constraint firstItem="Mxd-Bs-1Ex" firstAttribute="leading" secondItem="iHP-64-UL0" secondAttribute="leading" id="TLn-n7-lQg"/>
+                    <constraint firstItem="iHP-64-UL0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Tl4-5k-kRg"/>
+                    <constraint firstItem="Mxd-Bs-1Ex" firstAttribute="width" secondItem="iHP-64-UL0" secondAttribute="width" id="cJi-lU-pcg"/>
+                    <constraint firstItem="r6e-XZ-BXw" firstAttribute="top" secondItem="iHP-64-UL0" secondAttribute="bottom" constant="18" id="fez-xL-Jjj"/>
+                    <constraint firstItem="r6e-XZ-BXw" firstAttribute="width" secondItem="iHP-64-UL0" secondAttribute="width" id="jVK-Ba-say"/>
+                    <constraint firstItem="Mxd-Bs-1Ex" firstAttribute="top" secondItem="r6e-XZ-BXw" secondAttribute="bottom" constant="12" id="u1a-Wb-YZT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Mxd-Bs-1Ex" secondAttribute="bottom" constant="9" id="un9-fT-Vog"/>
+                    <constraint firstItem="Mxd-Bs-1Ex" firstAttribute="trailing" secondItem="iHP-64-UL0" secondAttribute="trailing" id="wKE-IW-v2D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="Mxd-Bs-1Ex" id="vp4-Xu-Ow6"/>
+                <outlet property="thumbnailImageView" destination="r6e-XZ-BXw" id="eJs-tl-M0m"/>
+                <outlet property="title" destination="iHP-64-UL0" id="eLa-Ld-PRd"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="66.629464285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="thumbnailPlaceholder" width="1280" height="960"/>
+    </resources>
+</document>

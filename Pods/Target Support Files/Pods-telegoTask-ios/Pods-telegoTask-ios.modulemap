@@ -1,0 +1,6 @@
+framework module Pods_telegoTask_ios {
+  umbrella header "Pods-telegoTask-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
