@@ -15,7 +15,7 @@ class BookmarksTableViewController: UITableViewController {
     private var newsPersister: NewsPersister!
     private var bookmarkedNews: [News] = [] {
         didSet {
-            self.tableView.reloadData()
+            UIView.transition(with: self.tableView, duration: 0.4, options: .transitionCrossDissolve, animations: {self.tableView.reloadData()}, completion: nil)
         }
     }
     
@@ -87,7 +87,7 @@ extension BookmarksTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 215
     }
     
 }

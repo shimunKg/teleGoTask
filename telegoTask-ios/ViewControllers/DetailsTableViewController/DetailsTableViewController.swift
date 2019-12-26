@@ -20,6 +20,8 @@ class DetailsTableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "Details"
         registerCell()
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 600
     }
     
     // MARK: - Private methods
@@ -46,7 +48,4 @@ extension DetailsTableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
 }
